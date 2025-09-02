@@ -72,6 +72,7 @@ Finally, we evaluate the full MoSEs framework. The `CTE.py` script takes a test 
 The scripts in `examples/run_cte/` run this final evaluation. For example:
 ```bash
 # This script evaluates the MoSEs framework on all test sets.
+# Note: Please check and modify the SAR_PATH in the script to point to your trained model, e.g., subcentroids_head_epoch100.pt
 bash examples/run_cte/run_cte_fast_detect.sh
 ```
 The script will iterate through the test files, print the evaluation metrics (Accuracy, F1-score, etc.) for each, and save the detailed results to a JSON file in the `logs/` directory.
